@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de contacto del proyecto de Lenguaje de Marcas.">
+    <title>Formulario | Lenguaje de Marcas</title>
+    <link rel="stylesheet" href="../Estilo.css/css/estilo.css">
+    <script src="../JS/tema.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Formulario de contacto</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="horario.html">Horario</a>
+            <a href="formulario.html" aria-current="page">Formulario</a>
+            <a href="cuaderno.html">Cuaderno</a>
+            <a href="Mi_tienda.html">Tienda</a>
+            <a href="calculadora.html">Calculadora</a>
+            <a href="piedrapapeltijera.html">Piedra, papel o tijera</a>
+            <a href="estilosjavascrip.html" aria-current="page">Modo</a>
+            
+
+        </nav>
+    </header>
+
+    <main class="page-shell">
+        <fieldset class="form-container">
+            <legend>Envíanos un mensaje</legend>
+            <form action="#" method="post">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
+                </div>
+
+                <div>
+                    <label for="asunto">Asunto:</label>
+                    <select id="asunto" name="asunto">
+                        <option value="consulta">Consulta</option>
+                        <option value="sugerencia">Sugerencia</option>
+                        <option value="trabajo">Trabajo</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe aquí tu mensaje..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar</button>
+            </form>
+        </fieldset>
+    </main>
+
+    <footer>
+        <p>CIFP Virgen de Gracia</p>
+        <p>Contacto: <a href="mailto:albertoca.0701gmail.com">albertoca.0701gmail.com</a></p>
+    </footer>
+</body>
+</html>

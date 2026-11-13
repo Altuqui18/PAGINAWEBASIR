@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <meta name="description" content="Calculadora sencilla con operaciones básicas y acceso desde el teclado.">
+    <link rel="stylesheet" href="../Estilo.css/css/estilo.css">
+    <script src="../JS/tema.js" defer></script>
+    <script src="../JS/calculadora.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="horario.html">Horario</a>
+            <a href="formulario.html">Formulario</a>
+            <a href="cuaderno.html">Cuaderno</a>
+            <a href="calculadora.html" aria-current="page">Calculadora</a>
+            <a href="piedrapapeltijera.html">Piedra, papel o tijera</a>
+             <a href="estilosjavascrip.html" aria-current="page">Modo</a>
+        </nav>
+    </header>
+
+    <main class="calculadora">
+        <h1>Calculadora</h1>
+        <input id="pantalla" class="calculadora-pantalla" type="text" value="0" aria-label="Pantalla de la calculadora" aria-live="polite" aria-atomic="true" readonly>
+        <p class="calculadora-ayuda">Usa los botones o el teclado. Intro calcula; Escape borra.</p>
+        <div class="calculadora-teclas">
+            <button type="button" data-action="clear" class="calculadora-secundaria" aria-label="Borrar todo">AC</button>
+            <button type="button" data-action="backspace" class="calculadora-secundaria" aria-label="Borrar último dígito">⌫</button>
+            <button type="button" data-action="sign" class="calculadora-secundaria" aria-label="Cambiar signo">±</button>
+            <button type="button" data-operator="/" class="calculadora-operador" aria-label="Dividir">÷</button>
+            <button type="button" data-digit="7">7</button>
+            <button type="button" data-digit="8">8</button>
+            <button type="button" data-digit="9">9</button>
+            <button type="button" data-operator="*" class="calculadora-operador" aria-label="Multiplicar">×</button>
+            <button type="button" data-digit="4">4</button>
+            <button type="button" data-digit="5">5</button>
+            <button type="button" data-digit="6">6</button>
+            <button type="button" data-operator="-" class="calculadora-operador" aria-label="Restar">−</button>
+            <button type="button" data-digit="1">1</button>
+            <button type="button" data-digit="2">2</button>
+            <button type="button" data-digit="3">3</button>
+            <button type="button" data-operator="+" class="calculadora-operador" aria-label="Sumar">+</button>
+            <button type="button" data-digit="0" class="calculadora-cero">0</button>
+            <button type="button" data-action="decimal">.</button>
+            <button type="button" data-action="equals" class="calculadora-igual" aria-label="Calcular resultado">=</button>
+        </div>
+    </main>
+</body>
+</html>

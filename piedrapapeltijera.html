@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Juego de piedra, papel o tijera con puntuación y reinicio.">
+    <title>Piedra, papel o tijera</title>
+    <link rel="stylesheet" href="../Estilo.css/css/estilo.css">
+    <script src="../JS/tema.js" defer></script>
+    <script src="../JS/juego.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Piedra, papel o tijera</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="horario.html">Horario</a>
+            <a href="formulario.html">Formulario</a>
+            <a href="cuaderno.html">Cuaderno</a>
+            <a href="Mi_tienda.html">Tienda</a>
+            <a href="calculadora.html">Calculadora</a>
+            <a href="piedrapapeltijera.html" aria-current="page">🪨 Piedra, 📄 papel o ✂️ tijera</a>
+            <a href="estilosjavascrip.html" aria-current="page">Modo</a>
+        </nav>
+    </header>
+
+    <main class="juego">
+        <h2>Elige tu jugada</h2>
+        <div class="juego-opciones" aria-label="Opciones del juego">
+            <button type="button" data-eleccion="piedra">🪨 Piedra</button>
+            <button type="button" data-eleccion="papel">📄 Papel</button>
+            <button type="button" data-eleccion="tijera">✂️ Tijera</button>
+        </div>
+
+        <p id="resultado-juego" class="juego-resultado">Haz tu jugada para empezar a jugar.</p>
+        <p class="juego-puntuacion">Puntuación: tú <span id="puntos-jugador">0</span> - <span id="puntos-ordenador">0</span> ordenador</p>
+        <button type="button" id="reiniciar-juego" class="juego-reiniciar">Reiniciar partida</button>
+    </main>
+</body>
+</html>

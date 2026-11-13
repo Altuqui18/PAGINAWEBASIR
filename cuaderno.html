@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cuaderno de clase con apuntes y ejemplos de HTML y CSS.">
+    <title>Cuaderno | Lenguaje de Marcas</title>
+    <link rel="stylesheet" href="../Estilo.css/css/estilo.css">
+    <script src="../JS/tema.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Cuaderno de clase</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="horario.html">Horario</a>
+            <a href="formulario.html">Formulario</a>
+            <a href="cuaderno.html" aria-current="page">Cuaderno</a>
+            <a href="calculadora.html">Calculadora</a>
+            <a href="piedrapapeltijera.html">Piedra, papel o tijera</a>
+             <a href="estilosjavascrip.html" aria-current="page">Modo</a>
+        </nav>
+    </header>
+
+    <main class="page-shell">
+        <section class="panel">
+            <h2>Apuntes y ejemplos</h2>
+            <p class="texto-verdana">Aquí se recopilan ejemplos básicos de HTML con <span class="resaltado">formato destacado</span>, enlaces, imágenes y contenido preformateado.</p>
+
+            <div class="notes-grid">
+                <article class="notas">
+                    <h3>Ejemplo de marcado</h3>
+                    <ul>
+                        <li>Se pueden utilizar encabezados para organizar la información.</li>
+                        <li>Los enlaces permiten navegar a otras páginas o recursos.</li>
+                        <li>También podemos añadir listas y contenido visual.</li>
+                    </ul>
+                </article>
+
+                <article class="notas">
+                    <h3>Ejemplo de texto preformateado</h3>
+                    <pre class="texto-pre">&lt;section&gt;
+  &lt;h2&gt;Tarea HTML&lt;/h2&gt;
+  &lt;p&gt;Esto se ve muy bien si está bien estructurado.&lt;/p&gt;
+&lt;/section&gt;</pre>
+                </article>
+            </div>
+        </section>
+
+        <section class="banner">
+            <img src="../imagenes/flor.png" alt="Flor decorativa">
+        </section>
+
+        <div class="caja-link">
+            Este es un <a href="https://www.google.com" target="_blank" rel="noreferrer">hipervínculo a Google</a> para practicar enlaces externos.
+        </div>
+
+        <section class="seccion-flor-container">
+            <h2 class="titulo-rojo">Ejemplo de sección con <del>formato antiguo</del> <span class="badge-amarillo">mejorado</span></h2>
+
+            <a href="#capitulo4" class="boton-amarillo">Ir al capítulo 4</a>
+
+            <img src="../imagenes/flor.jpg" alt="Flor de fondo" class="imagen-fondo-flor">
+        </section>
+
+        <section id="capitulo4" class="caja-azul-fuerte">
+            <h3>Capítulo 4: contenido destacado</h3>
+            <p>Este bloque sirve para destacar una sección importante dentro de la misma página y mostrar cómo pueden enlazarse zonas concretas.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>CIFP Virgen de Gracia</p>
+        <p>Cuaderno de clase de Lenguaje de Marcas</p>
+    </footer>
+</body>
+</html>
